@@ -3,8 +3,8 @@
 use std log
 
 if "NTFY_TOPIC" not-in $env {
-  log error "You must define a ntfy.sh topic as NTFY_TOPIC"
-  exit 1
+    log error "You must define a ntfy.sh topic as NTFY_TOPIC"
+    exit 1
 }
 
 const last_fee = '/tmp/last_cheap_fee'
@@ -23,7 +23,7 @@ if $fee < $cheap {
         $fee | save -f $last_fee
         log debug $'Notified cheap transaction fees at ($fee) sat/vB'
     } else {
-        log debug $'Already notified transaction fees under ($fee) sat/vB'
+        log debug $'Already notified transaction fees at ($fee) sat/vB'
     }
 } else {
     log debug $'Transaction fees too high at ($fee) sat/vB'
