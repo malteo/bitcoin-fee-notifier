@@ -37,6 +37,18 @@ Example:
 CHEAP_FEE=10
 ```
 
+### RISING_TRIGGER
+
+The percentage (in decimal form) upper limit from the last reported fee to trigger a rising fees notification.
+
+Defaults to `1.5`.
+
+Example:
+
+```
+RISING_TRIGGER=1.618
+```
+
 ## Usage (standalone)
 
 ```bash
