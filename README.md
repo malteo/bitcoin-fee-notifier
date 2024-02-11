@@ -29,12 +29,12 @@ NTFY_TOPIC=nzmJdHAjFgVw8DOm
 
 The sat/vB lower limit which will enable sending the cheap fees notification.
 
-Defaults to 35.
+Defaults to 15.
 
 Example:
 
 ```
-CHEAP_FEE=10
+CHEAP_FEE=35
 ```
 
 ### RISING_TRIGGER

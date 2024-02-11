@@ -14,7 +14,7 @@ if not ($last_fee | path exists) {
 }
 
 let fee = (http get https://mempool.space/api/v1/fees/recommended).economyFee
-let cheap = $env.CHEAP_FEE? | default 35 | into int
+let cheap = $env.CHEAP_FEE? | default 15 | into int
 let last = open $last_fee | into int
 let rising_trigger = $env.RISING_TRIGGER? | default 1.5 | into float
 
